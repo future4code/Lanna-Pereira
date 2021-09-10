@@ -1,0 +1,4 @@
+resposta do exercício de interpretação de código1 - o que vai ser impresso no console é
+     10 e 5, e 10 
+
+2- será impresso 10, 10, 103-let horasDeTrabalho = prompt (" Quantas horas você trabalha por dia")  Let ganhosPorHora = prompt (" Quanto você recebe por dia")  alert ('Você recebe ${ganhosPorHora/horasDeTrabalho} por hora')
