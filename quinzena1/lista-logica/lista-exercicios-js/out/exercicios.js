@@ -134,9 +134,20 @@ console.log(renovandoRg)
 // Exercício 11
 function checaAnoBissexto() {
   // escreva seu código aqui
+  const checagemAno = prompt ('Digite ano')
+  const bissexto1 = checagemAno % 400 === 0
+  const bissexto2 = checagemAno % 4 === 0 && checagemAno % 100!==0
+  const naoBissexto= checagemAno&&bissexto1&&bissexto2
+  console.log(naoBissexto||bissexto1||bissexto2)
+
+
 }
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
   // escreva seu código aqui
-}
+  const idade = prompt ('digite sua idade')
+  const ensMedio = prompt ('Já concluiu o ensino médio?')
+  const disHorario = prompt ('Tens disponibilidade de horario?')
+
+  
