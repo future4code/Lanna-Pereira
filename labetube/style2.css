@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h4{
+    display: flex;
+    flex-direction: flex-start;
+}
+.app-bar{
+    height: 55px;
+}
+header{
+    /*altera todos os itens do header*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(212, 154, 209);
+    height: 55px;
+    width: 100%;
+}
+body {
+    background-color: rgb(233, 178, 247);
+    
+}
+.video-click{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-player{
+    height: 500px;
+    width: 850px;
+    padding-left: 10px;
+}

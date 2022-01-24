@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /*organiza os itens dentro do container(não o que esta dentro das tags filhos)*/
+    display: flex;
+    flex-direction: row;
+    height: 88vh;
+    width: 100vw;
+    background-color: rgb(233, 178, 247);
+}
+header{
+    /*altera todos os itens do header*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(250, 126, 209);
+    height: 55px;
+    width: 100%;
+}
+.app-bar{
+    height: 55px;
+}
+main {
+    /*aqui altera a estrutura do main*/
+     margin: 20px;
+     display: flex;
+     column-gap: 1px;
+}
+  
+nav{
+    /*altera toda a estrutura da nav*/
+    width: 120px;
+    padding: 3px;
+    background-color: rgb(243, 217, 248);
+    background-image:url(https://www.kolpaper.com/wp-content/uploads/2020/09/Kawaii-HD-Wallpapers.jpg);
+}
+.menu-lateral{
+    /*aqui mexe nos itens dentro do menu lateral, ou seja, texto-menu*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgb(3, 3, 3);
+    color: pink;
+}
+.texto-menu{
+    /*aqui altera os itens do texto-menu*/
+    color: rgb(0, 0, 0);
+}
+hr{
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 115px;
+}
+p{
+ margin-top: 3px;
+}
+a{
+    color: rgb(255, 255, 255);
+}
+.video-1{
+    /*aqui altera os itens dentro do video-1*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(147, 82, 156);
+    height: 0;
+    width: 0;
+}
+.banner-video{
+    height: 160px;
+    width: 300px;
+}
+.video-2{
+    /*altera tudo que é do video-2*/
+    background-color: rgb(222, 140, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    margin: 5px;
+    padding: 10px;
+    color: seashell;
+}
+.video-player{
+    background-color: rgb(163, 91, 185);
+    height: 230px;
+    width: 400px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 126, 209);
+    height: 100%;
+    width: 100%;
+}
+@media screen and (min-device-width: 420px)and (max-device-width: 520px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        /*aqui altera a estrutura do main*/
+         margin-top: 5px;
+         margin-left: 60px;
+         display: flex;
+         column-gap: 1px;
+    }
+    .container{
+        /*organiza os itens dentro do container(não o que esta dentro das tags filhos)*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:flex-start;
+        justify-content: center;
+        height: 250vh;
+        width: 100vw;
+    }
+
+    .app-bar{
+    height: 55px;
+    }
+    header{
+        /*altera todos os itens do header*/
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: rgb(250, 126, 209);
+        height: 55px;
+        width: 100%;
+    }
+    .video-1{
+        /*aqui altera os itens dentro do video-1*/
+        height: 15vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-left: 19px;
+        margin-top: 0px;
+    }
+    .video-2{
+        /*altera tudo que é do video-2*/
+        background-color: rgb(167, 44, 204);
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+        margin: 1px;
+        padding: 10px;
+        color: seashell;
+    }
+    nav{
+        /*altera toda a estrutura da nav*/
+        width: 120px;
+        padding: 5px;
+        background-color: rgb(243, 217, 248);
+        background-image:url(https://www.kolpaper.com/wp-content/uploads/2020/09/Kawaii-HD-Wallpapers.jpg);
+    }
+}
