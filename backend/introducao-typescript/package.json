@@ -1,0 +1,20 @@
+{
+  "name": "introducao-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "atividade1": "tsc && node ./build/atividade1.js",
+    "atividade2": "tsc && node ./build/atividade2.js",
+    "atividade3": "tsc && node ./build/atividade3.js",
+    "atividade4": "tsc && node ./build/atividade4.js",
+    "atividade5": "tsc && node ./build/atividade5.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
