@@ -1,7 +1,9 @@
-//* Output : { maior: 74, menor: 5, media: 28.5 }; a saida botei "any" e as entradas um array de números.
+
+//a)  recebe uma lista de numero e mostra o maior numero, o menor numero e a media entre o dois
+//b)  let some recebe number| a function recebe o type Estatisticas como uma tipagem| o array é uma lista de numeros|
 function obterEstatisticas(numeros: number[]): Estatisticas {
 
-    const numerosOrdenados :number[]= numeros.sort(
+    const numerosOrdenados: number[] = numeros.sort(
         (a, b) => a - b
     )
 
@@ -10,7 +12,8 @@ function obterEstatisticas(numeros: number[]): Estatisticas {
     for (let num of numeros) {
         soma += num
     }
-//b?
+
+     
     const estatisticas: Estatisticas = {
         maior: numerosOrdenados[numeros.length - 1],
         menor: numerosOrdenados[0],
@@ -26,12 +29,9 @@ type Estatisticas = {
     media: number
 }
 
-
-
-//c
-
-type AmostraDeIdades = {
-    numeros: number[],
-    obterEstatisticas: (numeros:number[])=> Estatisticas
+type AmostrasDeIdades = {
+    numero: number[],
+    obterEstatisticas: (numero: number[]) => Estatisticas
 }
-console.log(obterEstatisticas([15,22,44,32,25,74,11,5,]))
+
+console.log(obterEstatisticas([15,259,253,11,25,347,35,28,89]))
