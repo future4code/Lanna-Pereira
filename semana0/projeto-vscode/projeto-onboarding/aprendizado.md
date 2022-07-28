@@ -1,2 +1,0 @@
-# Aprendizados da semana
-Nessa semana na aula de terminal investigamos um crime , e aprendi a usar o git, pra mim tudo é muito confuso e complicado e os **memes de programador** nunca fizeram tanto sentido pra mim
