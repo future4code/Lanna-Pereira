@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import CartasCostas from "../components/CartasCostas";
 import CartasFrente from "../components/CartasFrente";
 import styled from "styled-components";
-import img1 from "../img/img1.jpg"
+
 
 
 const ContainerPrincipal = styled.div`
@@ -29,6 +29,7 @@ const Botao = styled.button`
 const MainDiv = styled.div`
    display: flex;
    flex-direction: column;
+   justify-content:center;
 `
 
 const Embaralhar = () => {
@@ -44,10 +45,8 @@ const Embaralhar = () => {
            <ContainerPrincipal>
               {embaralhar ? <CartasFrente/> : <CartasCostas/>}
            </ContainerPrincipal>
-            </MainDiv>
+      </MainDiv>
         );
 };
 
 export default Embaralhar;
-
-// {embaralhar?<CartasFrente/>:<CartasCostas/>}

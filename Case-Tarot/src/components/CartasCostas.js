@@ -20,9 +20,15 @@ const SubContainer = styled.div`
    column-gap: 15px;
    grid-template-rows: repeat(4,1fr);
    grid-template-columns: repeat(8, 1fr);
+  
 `
 
-
+const Flip = styled.div`
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+`
 
 const CartasCostas = () => {
     const {states, imagemFrente, imagemCosta} = useContext(GlobalContext)
@@ -48,10 +54,10 @@ const CartasCostas = () => {
     return(
         <ContainerPrincipal> 
             {cartaVirada?
-            <SubContainer>
-                <img src={imagemFrente + image} alt={image}/>
-                </SubContainer>:<SubContainer>
-                   {mostrarImgCosta}
+                <SubContainer>
+                    <img src={imagemFrente + image} alt={image}/>
+                    </SubContainer>:<SubContainer>
+                    {mostrarImgCosta}
                 </SubContainer>
             }   
         </ContainerPrincipal>

@@ -9,8 +9,9 @@ const Container = styled.div`
     background-image:url(${imgHome});
     width: 100%;
     height: 95vh;
-    color: lightblue;
+    color: lightgray;
     text-align: center;
+    font-size: large;
 `
 const Botao = styled.button`
    border-radius: 15px;
@@ -30,11 +31,12 @@ const Home = () => {
     return(
         <Container>
             <div>
-            <p>Bem Vinda(o) ao Jogo de Tarot</p>
+            <p>Seja Bem Vindx ao Jogo de Tarot</p>
             <p>Jogue a cartas e encontre a resposta para a sua questão!</p>
 
             <p>Como jogar</p>
-            <p>Após iniciar o jogo, clique em "Embaralhar", escolha uma carta e seja feliz!</p>
+            <p>Após iniciar o jogo, clique em "Embaralhar".</p>
+            <p>escolha uma carta e descubra o que o futuro lhe aguarda.</p>
             </div>
             
             <Botao onClick={()=>goToEmbaralhar(navigate)}> Jogar </Botao>
@@ -42,4 +44,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

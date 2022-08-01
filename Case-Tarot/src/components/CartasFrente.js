@@ -16,6 +16,8 @@ const SubContainer = styled.div`
    column-gap: 15px;
    grid-template-rows: repeat(4,1fr);
    grid-template-columns: repeat(8, 1fr);
+ 
+
 `
 
 const Imagem = styled.img`
