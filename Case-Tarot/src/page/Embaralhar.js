@@ -5,10 +5,6 @@ import styled from "styled-components";
 import img1 from "../img/img1.jpg"
 
 
-const Paragrafo = styled.p `
-   background-color: azure;
-   font-family: 'Times New Roman', Times, serif;
-`
 const ContainerPrincipal = styled.div`
    display: flex;
    width: 100%;
@@ -44,7 +40,6 @@ const Embaralhar = () => {
 
   return(
      <MainDiv>
-        <Paragrafo>embaralhando...</Paragrafo>
            <Botao onClick={mudarBotao}> {embaralhar?<p>embaralhar</p>:<p>jogar novamente</p>}</Botao>
            <ContainerPrincipal>
               {embaralhar ? <CartasFrente/> : <CartasCostas/>}
