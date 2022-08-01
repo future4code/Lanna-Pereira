@@ -4,14 +4,13 @@ import styled from "styled-components";
 import img1 from "../img/img1.jpg"
 
 
-const ContainerPrincipal = styled.div`
+const ContainerPrincipal2 = styled.div`
    display: flex;
    justify-content: center;
-   width: 100%;
-   height: 100%;
    flex-direction: row;
    background-color: beige;
    background-image: url(${img1})
+   
    
 `
 const SubContainer = styled.div`
@@ -24,10 +23,8 @@ const SubContainer = styled.div`
 `
 
 const Flip = styled.div`
-    display: flex;
-    justify-content: center;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
+    width:30%;
+    height: 10%;
 `
 
 const CartasCostas = () => {
@@ -52,15 +49,15 @@ const CartasCostas = () => {
     })
 
     return(
-        <ContainerPrincipal> 
-            {cartaVirada?
-                <SubContainer>
+        <ContainerPrincipal2> 
+            {cartaVirada? 
+                 <Flip><SubContainer>
                     <img src={imagemFrente + image} alt={image}/>
-                </SubContainer>:<SubContainer>
+                </SubContainer></Flip>:<SubContainer>
                     {mostrarImgCosta}
                 </SubContainer>
             }   
-        </ContainerPrincipal>
+        </ContainerPrincipal2>
     )
 }
 

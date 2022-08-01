@@ -17,6 +17,7 @@ const Botao = styled.button`
    border-radius: 15px;
    border: none;
    width: 30%;
+   height:6%;
    margin-bottom: 8px;
    &:hover{
       box-shadow: 1px 3px 3px gray;

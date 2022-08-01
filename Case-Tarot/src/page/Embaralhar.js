@@ -7,11 +7,7 @@ import styled from "styled-components";
 
 const ContainerPrincipal = styled.div`
    display: flex;
-   width: 100%;
-   height: 100%;
-
-   justify-content: center;
-   background-color: beige;
+   align-items: center;
    
 `
 const Botao = styled.button`
@@ -26,10 +22,14 @@ const Botao = styled.button`
       background-color: darkgray;
    }
 `
+
+
 const MainDiv = styled.div`
    display: flex;
    flex-direction: column;
    justify-content:center;
+   width: 100%;
+   height: 100%;
 `
 
 const Embaralhar = () => {

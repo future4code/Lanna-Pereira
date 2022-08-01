@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import GlobalContext from "./globalContext"
 
+
+
 const GlobalState = ({children}) => {
     const [tarot,setTarot] = useState([])
 

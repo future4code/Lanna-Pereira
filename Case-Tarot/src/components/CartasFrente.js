@@ -5,9 +5,7 @@ import img1 from "../img/img1.jpg"
 
 const ContainerPrincipal = styled.div`
    display: flex;
-   justify-content: center;
    flex-direction: row;
-   background-color: beige;
    background-image: url(${img1});
 `
 const SubContainer = styled.div`
@@ -16,13 +14,12 @@ const SubContainer = styled.div`
    column-gap: 15px;
    grid-template-rows: repeat(4,1fr);
    grid-template-columns: repeat(8, 1fr);
- 
-
 `
 
 const Imagem = styled.img`
     border-radius: 15px;
 `
+
 
 const CartasFrente = () => {
     const {states, imagemFrente} = useContext(GlobalContext)
@@ -42,10 +39,9 @@ console.log(tarot)
 
     return<div>
         <ContainerPrincipal>
-            <SubContainer>
-                {carta}
-            </SubContainer>
-             
+                <SubContainer>
+                    {carta}   
+                </SubContainer>
         </ContainerPrincipal>
            
         </div>
