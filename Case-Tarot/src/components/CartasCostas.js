@@ -56,7 +56,7 @@ const CartasCostas = () => {
             {cartaVirada?
                 <SubContainer>
                     <img src={imagemFrente + image} alt={image}/>
-                    </SubContainer>:<SubContainer>
+                </SubContainer>:<SubContainer>
                     {mostrarImgCosta}
                 </SubContainer>
             }   
