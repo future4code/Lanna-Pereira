@@ -17,8 +17,7 @@ const SubContainer = styled.div`
    display: grid;
    row-gap: 15px;
    column-gap: 15px;
-   grid-template-rows: repeat(4,1fr);
-   grid-template-columns: repeat(8, 1fr);
+   grid-template-columns: repeat(4, 1fr);
   
 `
 
