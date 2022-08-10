@@ -8,6 +8,12 @@
 
 -> Apresentar a carta selecionada e o nome da carta.
 
+### O que não funciona
+-> tente estilizar com flip.
+
+-> colocar background.
+
+-> centralizar o botão de embaralhar.
 
 ###  Tecnologias Usadas.
 As seguintes ferramentas foram usadas na construção do projeto:
