@@ -1,30 +1,28 @@
 import React, { useContext, useState } from "react";
 import GlobalContext from "../global/globalContext";
 import styled from "styled-components";
-import img1 from "../img/img1.jpg"
 
 
 const ContainerPrincipal2 = styled.div`
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
-   background-color: beige;
-   background-image: url(${img1})
-   
-   
+   width:100%;
+   height: 100%;   
+   border-radius: 15px;
 `
 const SubContainer = styled.div`
    display: grid;
    row-gap: 15px;
    column-gap: 15px;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(8, 1fr);
   
 `
-
-const Flip = styled.div`
-    width:30%;
-    height: 10%;
+const Container3 = styled.div`
+ &:hover{
+    background-color: darkgrey;
+    border-radius: 15px;
+    align-items: center;
+ }
 `
+
 
 const CartasCostas = () => {
     const {states, imagemFrente, imagemCosta} = useContext(GlobalContext)
@@ -41,18 +39,18 @@ const CartasCostas = () => {
 
     const mostrarImgCosta = tarot.cards.map((card)=>{
         return(
-            <div onClick={aleatorio}>
+            <Container3 onClick={aleatorio}>
                 <img src={imagemCosta} alt="imagem costa"/>
-            </div>
+            </Container3>
         )
     })
 
     return(
         <ContainerPrincipal2> 
             {cartaVirada? 
-                 <Flip><SubContainer>
+                <SubContainer>
                     <img src={imagemFrente + image} alt={image}/>
-                </SubContainer></Flip>:<SubContainer>
+                </SubContainer>:<SubContainer>
                     {mostrarImgCosta}
                 </SubContainer>
             }   
