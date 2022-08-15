@@ -1,5 +1,6 @@
 ## API Dog Hero
 
+link do postman: https://documenter.getpostman.com/view/20084732/VUjSGjZe
 
 ### O que funciona
  -> Criar um novo agendamento.
@@ -20,12 +21,12 @@
 
 ## Tecnologias Utilizadas
 
- 1. Typescript
- 2. Node.js
- 5. Express
- 6. Uuid
- 8. Dotenv
- 9. Mysql
+ Typescript
+ Node.js
+ Express
+ Uuid
+ Dotenv
+ Mysql
 
 <br>
 
