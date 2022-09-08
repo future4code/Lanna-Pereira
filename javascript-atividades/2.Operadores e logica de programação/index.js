@@ -5,7 +5,7 @@
                     const bool3 = !bool2
 
                     let resultado = bool1 && bool2
-                    console.log("a. ", resultado)
+                    console.log("a. ",resultado)
 
                     resultado = bool1 && bool2 && bool3 
                     console.log("b. ", resultado) 
